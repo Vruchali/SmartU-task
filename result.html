@@ -1,0 +1,18 @@
+<!-- summarizer/templates/summarizer/result.html -->
+<html>
+<head>
+    <title>Summary and Keywords</title>
+</head>
+<body>
+    <h1>PDF Uploaded Successfully</h1>
+    <h2>Summary:</h2>
+    <p>{{ summary }}</p>
+    <h2>Keywords:</h2>
+    <ul>
+        {% for keyword in keywords %}
+        <li>{{ keyword }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ pdf.pdf_file.url }}">Download PDF</a>
+</body>
+</html>

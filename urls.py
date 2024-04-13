@@ -1,0 +1,10 @@
+
+from django.urls import path, include
+
+from . import views
+
+urlpatterns = [
+    path('', views.upload_pdf, name='upload_pdf'),
+    path('pdf/<str:filename>/', views.process_pdf, name='process_pdf'),  # New pattern for processing PDF files
+    # Add more URL patterns as needed
+]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
